@@ -1,0 +1,18 @@
+{
+    "name": "NewBlood.DomainReloading.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9d1a67e50c9d52c4cbfac306f00e8b99"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
