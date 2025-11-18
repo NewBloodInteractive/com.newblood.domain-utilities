@@ -2,6 +2,6 @@
   "name": "com.newblood.domain-utilities",
   "displayName": "Domain Reload Utilities",
   "description": "Utilities to assist development with domain reloading disabled.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "library"
 }
