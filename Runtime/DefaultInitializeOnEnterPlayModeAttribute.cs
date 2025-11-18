@@ -1,10 +1,12 @@
 #nullable enable
 
 using System;
+using System.Diagnostics;
 
 namespace NewBlood
 {
     /// <summary>Marks a static field for default-initialization on entering play mode.</summary>
+    [Conditional("UNITY_EDITOR")]
     [AttributeUsage(AttributeTargets.Field, Inherited = false, AllowMultiple = false)]
     public sealed class DefaultInitializeOnEnterPlayModeAttribute : Attribute
     {
