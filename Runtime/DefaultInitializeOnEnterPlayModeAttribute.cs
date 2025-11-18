@@ -8,11 +8,14 @@ namespace NewBlood
     [AttributeUsage(AttributeTargets.Field, Inherited = false, AllowMultiple = false)]
     public sealed class DefaultInitializeOnEnterPlayModeAttribute : Attribute
     {
+        /// <summary>The initialization type to use when <see cref="Value"/> is <see langword="null"/>.</summary>
+        public DefaultInitializeType InitializeType { get; }
+
         /// <summary>The default value that the field will be initialized to, if any.</summary>
         public object? Value { get; }
 
         /// <summary>Default-initializes the marked field.</summary>
-        public DefaultInitializeOnEnterPlayModeAttribute() => Value = null;
+        public DefaultInitializeOnEnterPlayModeAttribute(DefaultInitializeType type = DefaultInitializeType.Default) => InitializeType = type;
 
         /// <summary>Initializes the marked field with the provided default value.</summary>
         public DefaultInitializeOnEnterPlayModeAttribute(bool value) => Value = value;
